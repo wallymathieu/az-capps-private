@@ -37,7 +37,7 @@ resource caDnsVNet 'Microsoft.Network/privateDnsZones/virtualNetworkLinks@2018-0
   }
 }
 
-// wildecar A record
+// wildcard A record
 resource caDnsARecordApps 'Microsoft.Network/privateDnsZones/A@2018-09-01' = {
   parent: caDns
   name: '*'
